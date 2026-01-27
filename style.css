@@ -1,4 +1,214 @@
+/* ---------------------------------------------- General -----------------------------------------------------*/
+
+:root {
+  --bg-color-white: #FFFCFB;
+  --bg-color-orange: #FFF5EE;
+  --primary-color: #FF944C;
+  --secondary-color: #2C180B;
+  --light-brown: #5E3519;
+  --desc-text: #6C6C6C;
+  --light-orange: #FFE0CA;
+
+  --h1-font: 'Baloo 2', regular, sans-serif;
+  --h2-font: 'Poppins', regular, sans-serif;
+  --p-font: 'Inter', regular, sans-serif;
+
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  color: var(--secondary-color);
+  font-family: var(--p-font);
+  background-color: var(--bg-color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--h1-font);
+}
+
+h2 {
+  font-family: var(--h2-font);
+}
+
+p{
+  font-family: var(--p-font);
+}
+
+
+
+
+
+
+/* ---------------------------------------- CLASSES ---------------------------------------------------------- */
+.container{
+  margin: auto;
+  max-width: 1060px;
+} 
+
+
+.sectionBackground{
+  background-color:var(--bg-color-orange);
+}
+
+.btn{
+  background-color: var(--primary-color);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--bg-color-white);
+  border-radius: 15px;
+}
+
+.secondary{
+  background-color: var(--bg-color-white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+
+
+/* ---------------------------------------- HEADER ---------------------------------------------------------- */
+
+/* CSS NAVBAR à revoir */
+#navBar{
+  padding-top: 30px;
+  display: flex;
+  justify-content: right;
+
+  a{
+    font-family: var(--p-font);
+
+  }
+}
+
+
+
+/* ---------------------------------------- SECTION HERO ---------------------------------------------------------- */
+#heroContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+  
+  #heroContent1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #heroContent2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* =================== telechargement ==================== */
+
+#telechargement {
+
+  .container {
+    margin: 75px;
+  }
+}
+
+#dwlContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+#dwlContent1 {
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+#dwlContent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  img {
+    width: 400px;
+  }
+}
+
+
+/* ======================= FOOTER ======================== */
+
+#sectionFooter {
+  border-top: 1px solid var(--secondary-color);
+}
+
+#sectionFooter p {
+  background-color: var(--light-orange);
+  padding: 15px 32px;
+  font-size: 14px;
+}
+
+#footerCoontent {
+  margin: auto;
+  max-width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+
+  #ftContent1 {
+    font-family: var(--h1-font);
+    font-weight: 900;
+    font-size: 55px;
+    color: var(--primary-color);
+  }
+
+  #socialMedia {
+    display: flex;
+    gap: 25px;
+    margin-top: -35px;
+  }
+
+  .fa-brands {
+    color: var(--secondary-color);
+    font-size: 25px;
+  }
+
+  #ftContent2 ul {
+    list-style: none;
+    line-height: 45px;
+    font-weight: 600;
+
+    li a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+

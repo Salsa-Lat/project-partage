@@ -4,44 +4,283 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Projet - Page d'accueil</title>
+
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
     <script src="script.js" type="text/javascript"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-  <a href="/doc.html">Documentation</a>
 
   <header>
-    <nav>
-
+    <!-- Nav Bar -->
+    <nav id="navBar">
+      <ul>
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/doc.html">Documentation</a></li>
+      </ul>
     </nav>
 
   </header>
 
   <main>
-    ghjgjh
 
-    <section id="partenaire"></section>
+    <!-- SECTION HERO -->
+    <section id="hero">
 
-    <section id="problematique"></section>
+      <div class="container">
 
-    <section id="solutions"></section>
+        <div id="heroContent">
+          
+          <div id="heroContent1">
+            <h1>Partage</h1>
+            <p>Découvrez comment nous révolutionnons le monde avec nos solutions innovantes.</p>
+          </div>
 
-    <section id="temoignages"></section>
+          <div id="heroContent2">
+            <h3>Rejoindre la communauté</h3>
 
-    <section id="avantages"></section>
+            <div>
+              <a href="" class="btn">Découvrir</a>
+              <a href="" class="btn secondary">Télécharger</a>
+            </div>
+          </div>
+        </div>
 
-    <section id="lienDownload"></section>
+      </div>
+    </section>
+
+
+    <!-- Section Partenaires -->
+    <section id="partenaire" class="sectionBackground">
+      <div class="container">
+   
+        <h1>Partenaires</h1>
+
+        <div class="partenairesLogos">
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+        </div>
+      </div>
+    </section>
+
+    <section id="problematique">
+      <h2>Partager entre particuliers ce n'est pas toujours si simple</h2>
+
+      <p>Et si le problème n'était pas le partage mais la confiance?</p>
+
+      <img src="" alt=""/>
+    </section>
+
+    <!-- Section Solutions -->
+    <section id="solutions" class="sectionBackground">
+
+      <h2>Nos Solutions</h2>
+
+      <div class="cardWrapperSolutions">
+        <div class="card">
+          <img src="" alt=""/>
+          <h3>Partager</h3>
+          <p>Un onjet rarement utilisé? Optez pour me partage avec sûreté </p>
+        </div>
+
+        <div class="card">
+          <img src="" alt=""/>
+          <h3>Emprunter </h3>
+          <p>Vous hésitez à acheter un objet pour peu d'utilité? Optez pour l'emprunt d'objet avec confiance</p>
+        </div>
+
+        <div class="card">
+          <img src="" alt=""/>
+          <h3>Gagner des points</h3>
+          <p>Partager un objet permettra de gagner des points</p>
+        </div>
+
+        <div class="card">
+          <img src="" alt=""/>
+          <h3>Gagner des points</h3>
+          <p>Découvrez des réductions par l'accumulation des points gagnés</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages">
+
+      <h2>Témoignages des utilisateurs</h2>
+
+      <div class="cardWrapperTémoignages">
+
+        <div class="cardTemoignage">
+
+          <div class="vote">
+            <img src="" alt=""/>
+
+            <div class="avis">
+              <div>
+                <p>Julie</p>
+              </div>
+
+              <div class="etoiles">
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+
+        </div>
+
+        <div class="cardTemoignage">
+
+          <div class="vote">
+            <img src="" alt=""/>
+
+            <div class="avis">
+              <div>
+                <p>Julie</p>
+              </div>
+
+              <div class="etoiles">
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+          
+        </div>
+
+        <div class="cardTemoignage">
+
+          <div class="vote">
+            <img src="" alt=""/>
+
+            <div class="avis">
+              <div>
+                <p>Julie</p>
+              </div>
+
+              <div class="etoiles">
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+                <i class = "fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+          
+        </div>
+    </section>
+
+    <!-- Section Avantages  -->
+    <section id="avantages" class="sectionBackground">
+
+      <h2>Pourquoi nous ?</h2>
+
+      <div class="cardWrapperAvantages">
+
+        <div class="cardAvantage">
+          <h3>Sécurité</h3>
+          <img src="" alt=""/>
+          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+        </div>
+
+        <div class="cardAvantage">
+          <h3>Sécurité</h3>
+          <img src="" alt=""/>
+          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+        </div>
+
+        <div class="cardAvantage">
+          <h3>Sécurité</h3>
+          <img src="" alt=""/>
+          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+        </div>
+
+        <div class="cardAvantage">
+          <h3>Sécurité</h3>
+          <img src="" alt=""/>
+          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="telechargement">
+
+
+    <div id="dwlContent" class="container">
+      <div id="dwlContent1">
+        <h2>"Vivez le partage malin au quotidien"</h2>
+      </div>
+      
+      <div id="dwlContent2">
+        <img src="asset/pic1.png" alt="photo">
+        <div class="downloadButtons">
+          <a href="" class="btn">Télécharger sur Android</a>
+          <a href="" class="btn secondary">Télécharger sur iOS</a>
+        </div>
+      </div>
+      
+    </div>
+      
+
+    </section>
 
 
   </main>
   
 
 
-  <footer>
+  <footer id="sectionFooter">
+    
+    <div id="footerCoontent">
 
+      <div id="ftContent1">
+        <span>Partage</span>
+
+        <div id="socialMedia">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-behance"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div id="ftContent2">
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/doc.html">Documentation</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <p>&copy; 2026 Projet Partage. Tous droits réservés.</p>
   </footer>
+
+  <script src="https://kit.fontawesome.com/c7036cb919.js" crossorigin="anonymous"></script>
 
   </body>
 </html>
