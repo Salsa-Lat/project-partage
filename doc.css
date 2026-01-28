@@ -67,6 +67,7 @@ p{
   margin: auto;
   max-width: 1200px;
 } 
+
 .container-small{
   display: flex;
   flex-direction: column;
@@ -74,6 +75,7 @@ p{
   align-items: center;
   gap: 20px;
 }
+
 .container2{
   display: flex;
   justify-content: space-between;
@@ -289,5 +291,34 @@ p{
   h2{
     text-align: center;
     align-items: center;
+  }
+}
+
+.sarah{
+  width: 205px;
+    height: 205px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Section Maquette */
+#maquette{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.contenu-maq{
+  display: flex;
+    align-items: center;
+    height: 260px;
+    margin-bottom: 40px;
+
+  p{
+    width: 249px;
+  }
+  img{
+    height: 100%;
   }
 }
