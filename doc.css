@@ -1,1 +1,293 @@
 /* Le code CSS spécifique à la page de documentation */
+
+/* =================== GENERAL ==================== */
+:root {
+  --bg-color-white: #FFFCFB;
+  --bg-color-orange: #FFF5EE;
+  --primary-color: #FF944C;
+  --secondary-color: #2C180B;
+  --light-brown: #5E3519;
+  --desc-text: #6C6C6C;
+  --light-orange: #FFE0CA;
+
+  --h1-font: 'Baloo 2', regular, sans-serif;
+  --h2-font: 'Poppins', regular, sans-serif;
+  --p-font: 'Inter', regular, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: var(--p-font);
+  background-color: var(--bg-color-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--h1-font);
+  color: var(--primary-color);
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h2 {
+  font-family: var(--h2-font);
+  color: var(--primary-color);
+  font-size: 35px;
+}
+
+p{
+  font-family: var(--p-font);
+}
+
+
+
+
+
+/* =================== Classes ==================== */
+
+.selected {
+  font-weight: 600;
+}
+
+.container{
+  margin: auto;
+  max-width: 1200px;
+} 
+.container-small{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionPadding{
+    padding-block: 64px;
+    
+}
+
+.sectionBackground{
+  background-color:var(--bg-color-orange);
+}
+
+/* btn */
+.btn{
+  background-color: var(--primary-color);
+  padding: 15px 25px;
+  text-decoration: none;
+  color: var(--bg-color-white);
+  border-radius: 15px;
+  font-size: 21px;
+}
+
+.secondary{
+  background-color: var(--bg-color-white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+
+
+
+
+/* =================== NavBar ==================== */
+
+#navBar{
+  gap: 25px;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: right;
+  background-color: var(--primary-color);
+
+  a{
+    display: flex;
+    gap: 45px;
+  }
+
+  /* a{
+    font-family: var(--p-font);
+    color: var(--bg-color-white);
+  } */
+ 
+}
+
+
+
+
+
+/* =================== Section Hero ==================== */
+
+#hero {
+  background-image: 
+    radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%),
+    url('asset/bnac-image.png');
+  background-position: center;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* les cards  */
+.card { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: var(--bg-color-white);
+    padding: 30px;
+    width: 219px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    .carte{
+      img{
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: var(--desc-text);
+    }
+}
+
+
+
+
+
+/* =================== Section Contexte ==================== */
+
+#contexte{
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#contexte h2{
+  margin-bottom: 20px;
+}
+
+#contexte p{
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+
+
+
+
+/* =================== Pour-Qui ==================== */
+#pour-qui{
+  p{
+    max-width: 810px;
+  }
+}
+
+
+/* section prototype */
+#prototype{
+  h2{
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+/* =================== Section Partenaires ==================== */
+#partenaires{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    h2{
+
+      text-align: center;
+      margin-bottom: 20px;
+    } 
+} 
+
+.partenairesLogos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+/* srction service  */
+#services{
+  text-align: center;
+}
+.card-wrapper{
+  padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    
+}
+
+
+.services {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+ 
+.card {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+/* au survol */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+ 
+/* au clic */
+.card:active {
+  transform: scale(0.96);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+/* section telechargement */
+#telechargement{
+  h2{
+    text-align: center;
+    align-items: center;
+  }
+}

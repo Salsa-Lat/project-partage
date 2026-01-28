@@ -7,6 +7,7 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="asset/Favicon.png" />
     <script src="script.js" type="text/javascript"></script>
 
     <!-- Fonts -->
@@ -22,7 +23,7 @@
     <!-- Nav Bar -->
     <nav id="navBar">
       <ul>
-        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/index.html" class="selected">Accueil</a></li>
         <li><a href="/doc.html">Documentation</a></li>
       </ul>
     </nav>
@@ -39,8 +40,8 @@
         <div id="heroContent">
           
           <div id="heroContent1">
-            <h1>Partage</h1>
-            <p>Découvrez comment nous révolutionnons le monde avec nos solutions innovantes.</p>
+            <h1>Empruntez, prêtez, partagez… et découvrez une nouvelle façon de consommer !</h1>
+            <p>A mettre soit en bas soit en haut on prendra une décision final ensemble a la fin. </p>
           </div>
 
           <div id="heroContent2">
@@ -58,62 +59,66 @@
 
 
     <!-- Section Partenaires -->
-    <section id="partenaire" class="sectionBackground">
+    <section id="partenaire" class="sectionBackground sectionPadding">
       <div class="container">
    
-        <h1>Partenaires</h1>
+        <h2>Partenaires</h2>
 
         <div class="partenairesLogos">
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
+          <img src="asset/logo-Vinted.png" alt=""/>
+          <img src="asset/logo-too-good-to-go.png" alt=""/>
+          <img src="asset/logo-back-market.png" alt=""/>
+          <img src="asset/logo-geev.png" alt=""/>
         </div>
       </div>
     </section>
 
-    <section id="problematique">
-      <h2>Partager entre particuliers ce n'est pas toujours si simple</h2>
 
-      <p>Et si le problème n'était pas le partage mais la confiance?</p>
-
-      <img src="" alt=""/>
+    <!-- Section Problématique -->
+    <section id="problematique" class="sectionPadding">
+      <div class="container">
+        <h2>Partager entre particuliers ce n'est<BR> pas toujours si simple</h2>
+        <p>Et si le problème n'était pas le partage mais la confiance?</p>
+        <img src="asset/problematique.png" alt=""/>
+      </div>
     </section>
 
+
     <!-- Section Solutions -->
-    <section id="solutions" class="sectionBackground">
+    <section id="solutions" class="sectionBackground sectionPadding">
+      <div class="container">
+        <h2>Nos Solutions</h2>
 
-      <h2>Nos Solutions</h2>
+        <div class="cardWrapperSolutions">
+          <div class="card">
+            <img src="asset/icone-card-partager.png" alt=""/>
+            <h3>Partager</h3>
+            <p>Un onjet rarement utilisé? Optez pour me partage avec sûreté </p>
+          </div>
 
-      <div class="cardWrapperSolutions">
+          <div class="card">
+            <img src="asset/icone-card-emprunter.png" alt=""/>
+            <h3>Emprunter </h3>
+            <p>Vous hésitez à acheter un objet pour peu d'utilité? Optez pour l'emprunt d'objet avec confiance</p>
+          </div>
+
         <div class="card">
-          <img src="" alt=""/>
-          <h3>Partager</h3>
-          <p>Un onjet rarement utilisé? Optez pour me partage avec sûreté </p>
-        </div>
-
-        <div class="card">
-          <img src="" alt=""/>
-          <h3>Emprunter </h3>
-          <p>Vous hésitez à acheter un objet pour peu d'utilité? Optez pour l'emprunt d'objet avec confiance</p>
-        </div>
-
-        <div class="card">
-          <img src="" alt=""/>
+          <img src="asset/icone-card-gagner.png" alt=""/>
           <h3>Gagner des points</h3>
           <p>Partager un objet permettra de gagner des points</p>
         </div>
 
         <div class="card">
-          <img src="" alt=""/>
-          <h3>Gagner des points</h3>
+          <img src="asset/icone-card-cumuler.png" alt=""/>
+          <h3>Cumuler</h3>
           <p>Découvrez des réductions par l'accumulation des points gagnés</p>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Section Témoignages -->
-    <section id="temoignages">
+    <section id="temoignages" class="sectionPadding">
 
       <h2>Témoignages des utilisateurs</h2>
 
@@ -122,7 +127,7 @@
         <div class="cardTemoignage">
 
           <div class="vote">
-            <img src="" alt=""/>
+            <img src="asset/lucat.jpg" alt="kitty"/>
 
             <div class="avis">
               <div>
@@ -139,18 +144,18 @@
             </div>
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+          <p>« Inquiète d’utiliser un outil qui ne m’appartient pas, la fonction caution m’a permis d’être sereine. »</p>
 
         </div>
 
         <div class="cardTemoignage">
 
           <div class="vote">
-            <img src="" alt=""/>
+            <img src="asset/lucat.jpg" alt="kitty"/>
 
             <div class="avis">
               <div>
-                <p>Julie</p>
+                <p>Jean</p>
               </div>
 
               <div class="etoiles">
@@ -163,18 +168,18 @@
             </div>
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+          <p>« Grâce à cette application, j’ai pu prêter ma perceuse et cumuler des points. »</p>
           
         </div>
 
         <div class="cardTemoignage">
 
           <div class="vote">
-            <img src="" alt=""/>
+            <img src="asset/lucat.jpg" alt="kitty"/>
 
             <div class="avis">
               <div>
-                <p>Julie</p>
+                <p>Geev</p>
               </div>
 
               <div class="etoiles">
@@ -187,58 +192,92 @@
             </div>
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetuerrorriam dicta maiores repellendus, nam totam. Quibusdam. </p>
+          <p>« Grâce a l’application PARTAGE l’affluence sur notre boutique a doublé. »</p>
           
         </div>
     </section>
 
     <!-- Section Avantages  -->
-    <section id="avantages" class="sectionBackground">
+    <section id="avantages" class="sectionBackground sectionPadding">
+      <div class="container">
 
       <h2>Pourquoi nous ?</h2>
 
       <div class="cardWrapperAvantages">
-
+      
         <div class="cardAvantage">
-          <h3>Sécurité</h3>
+          <h3>Simplicité d'utilisation</h3>
           <img src="" alt=""/>
-          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+          <p>Notre application est conçue pour être <span>intuitive et facile à utiliser</span>. 
+          La création de profil, la recherche d'objets, la gestion des prêts et emprunts se font en quelques clics seulement.</p>
+        </div>
+          
+        <div class="cardAvantage">
+          <h3>Gratuite et accessible à tous</h3>
+          <img src="" alt=""/>
+          <p>Contrairement aux solutions existantes basées sur la location payante, notre application est <span>100 % gratuite</span>. 
+          Les utilisateurs peuvent emprunter ou prêter des objets sans dépenser un centime, ce qui rend le partage simple et attractif.</p>
+        </div>
+          
+        <div class="cardAvantage">
+          <h3>Une expérience gagnant-gagnant</h3>
+          <img src="" alt=""/>
+          <p>Les utilisateurs qui prêtent des objets sont <span>récompensés par des points convertibles en bons d'achat</span>. 
+          Chacun y trouve son intérêt : celui qui emprunte économise, et celui qui prête gagne.</p>
+        </div>
+      
+        <div class="cardAvantage">
+          <h3>Découverte et flexibilité</h3>
+          <img src="" alt=""/>
+          <p>Avant d'acheter un objet, les utilisateurs peuvent le <span>tester librement</span>, 
+          découvrir de nouvelles passions ou besoins, et éviter des achats inutiles.</p>
         </div>
 
         <div class="cardAvantage">
-          <h3>Sécurité</h3>
+          <h3>Sécurité et confiance</h3>
           <img src="" alt=""/>
-          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
+          <p>Les échanges sont sécurisés grâce à :</p>
+            <ul>
+              <li><span>un système de localisation</span></li>
+              <li><span>une empreinte bancaire</span></li>
+              <li><span>une caution</span></li>
+            </ul>
+          <p>Ainsi, chacun peut partager et emprunter en toute sérénité.</p>
         </div>
 
-        <div class="cardAvantage">
-          <h3>Sécurité</h3>
-          <img src="" alt=""/>
-          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
-        </div>
+          <div class="cardAvantage">
+            <h3>Impact positif sur la consommation</h3>
+            <img src="" alt=""/>
+            <p>En favorisant le partage plutôt que l'achat, nous permettons aux utilisateurs de <span>réduire la surconsommation</span>, 
+            de valoriser leurs objets inutilisés et de participer à une <span>économie plus responsable et durable.</span></p>
+          </div>
 
-        <div class="cardAvantage">
-          <h3>Sécurité</h3>
-          <img src="" alt=""/>
-          <p>ssdfsdfsfsdfsdfdsfsfsdfdsf</p>
         </div>
-
       </div>
     </section>
 
-    <section id="telechargement">
+
+    <!-- Section Téléchargement -->
+    <section id="telechargement" class="sectionPadding">
 
 
     <div id="dwlContent" class="container">
       <div id="dwlContent1">
         <h2>"Vivez le partage malin au quotidien"</h2>
+        <img src="asset/arrow.png" alt="arrow">
       </div>
       
       <div id="dwlContent2">
         <img src="asset/pic1.png" alt="photo">
         <div class="downloadButtons">
-          <a href="" class="btn">Télécharger sur Android</a>
-          <a href="" class="btn secondary">Télécharger sur iOS</a>
+          <div>
+            <a href="" class="btn">Télécharger</a>
+            <p>Sur Android</p> 
+          </div>
+          <div>
+            <a href="" class="btn secondary">Télécharger</a>
+            <p>Sur iOS</p>
+          </div>
         </div>
       </div>
       
@@ -246,6 +285,103 @@
       
 
     </section>
+
+
+    <!-- FAQ -->
+     
+    <section id="foire-au-question">
+      
+      <div class="container center">
+
+        <h2>Foire Au Questions</h2>
+
+        <img src="asset/logo-faq.png" alt="faq">
+
+        <p>Comment pouvons-nous vous aider ?</p>
+
+        <div>
+          <input type="text">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="question-asked">
+
+      <div class="container">
+
+        <h3>Question fréquement posée</h3>
+
+          <div class="question-blocks">
+
+            <div class="asked">
+              <p>Mes articles sont t'il en sécuriter une fois emprunter?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <p class="answered">Oui, car un système de caution est mis en place par emprunte bancaire.</p>
+
+
+
+            <div class="asked">
+              <p>MComment rendre un objet?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <p class="answered">Cette action se fait via la messagerie : cliquez sur « Rendre », convenez d’un rendez‑vous et scannez votre QR code de retour.p>
+
+
+            
+            <div class="asked">
+              <p>Comment convertir ses points?</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <p class="answered">Clique sur ton profil, puis rends-toi dans la section Partenaire. Choisis le partenaire auprès duquel tu souhaites dépenser tes points. Un bon d’achat sera alors généré automatiquement.</p>
+
+            
+            
+            <div class="asked">
+              <p>Comment devenir partenaire? </p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <p class="answered">Pour devenir partenaire, il suffit de nous contacter via le formulaire dédié sur notre site ou directement depuis l’application. Nous étudierons votre demande et vous expliquerons les étapes pour intégrer notre réseau de partenaires et proposer vos bons d’achat aux utilisateurs.</p>
+
+            
+
+          </div>
+      </div>
+
+      
+
+    </section>
+
+
+    <section class="needs">
+
+      <h3>Besoin d'aide supplémentaire ?</h3>
+
+      <div class="chat">
+
+        <div class="chat1">
+          <img src="asset/logo-msg.png" alt="">
+          <p>Chat en direct</p>
+        </div>
+
+        <div>
+          <img src="asset/logo-bt-lettre.png" alt="">
+          <p>Envoyer un e-mail</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
 
 
   </main>

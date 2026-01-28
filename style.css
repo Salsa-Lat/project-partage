@@ -1,4 +1,4 @@
-/* ---------------------------------------------- General -----------------------------------------------------*/
+/* =================== GENERAL ==================== */
 
 :root {
   --bg-color-white: #FFFCFB;
@@ -12,8 +12,6 @@
   --h1-font: 'Baloo 2', regular, sans-serif;
   --h2-font: 'Poppins', regular, sans-serif;
   --p-font: 'Inter', regular, sans-serif;
-
-  
 }
 
 * {
@@ -39,10 +37,15 @@ a {
 
 h1 {
   font-family: var(--h1-font);
+  color: var(--primary-color);
+  font-size: 50px;
+  line-height: 60px;
 }
 
 h2 {
   font-family: var(--h2-font);
+  color: var(--primary-color);
+  font-size: 35px;
 }
 
 p{
@@ -54,12 +57,15 @@ p{
 
 
 
-/* ---------------------------------------- CLASSES ---------------------------------------------------------- */
+/* =================== CLASSES ==================== */
 .container{
   margin: auto;
   max-width: 1060px;
 } 
 
+.sectionPadding{
+    padding-block: 64px;
+}
 
 .sectionBackground{
   background-color:var(--bg-color-orange);
@@ -67,10 +73,11 @@ p{
 
 .btn{
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 15px 25px;
   text-decoration: none;
   color: var(--bg-color-white);
   border-radius: 15px;
+  font-size: 21px;
 }
 
 .secondary{
@@ -81,23 +88,51 @@ p{
 
 
 
-/* ---------------------------------------- HEADER ---------------------------------------------------------- */
+/* =================== HEADER ==================== */
 
 /* CSS NAVBAR à revoir */
+/* FAIT */
 #navBar{
-  padding-top: 30px;
+  padding: 20px 70px;
   display: flex;
   justify-content: right;
+  background-color: var(--primary-color);
+
+  ul {
+    display: flex;
+    gap: 45px;
+  }
 
   a{
     font-family: var(--p-font);
-
+    color: var(--bg-color-white);
   }
+
+  li{
+    list-style: none;
+  }
+}
+
+.selected {
+  font-weight: 600;
 }
 
 
 
-/* ---------------------------------------- SECTION HERO ---------------------------------------------------------- */
+/* =================== Section HERO ==================== */
+#hero {
+  background-image: 
+    radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%),
+    url('asset/bnac-image.png');
+  background-position: center;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #heroContent{
   display: flex;
   justify-content: space-between;
@@ -108,14 +143,321 @@ p{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 55%;
+
+    p {
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+
   }
 
   #heroContent2{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    div {
+      display: flex;
+      gap: 25px;
+    }
   }
 }
+
+/* =================== Section Partenaires ==================== */
+
+#partenaire{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+    } 
+} 
+
+.partenairesLogos{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+
+    img {
+      width: 225px;
+    }
+    
+}
+
+
+
+
+/* =================== Section Problématiques ==================== */
+
+#problematique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    img{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+
+
+/* =================== Section Solutions ==================== */
+
+#solutions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardWrapperSolutions {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;  */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Je modifierai la card après, flemme  */
+/* FAIT */ 
+/* merci */
+.card { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: var(--bg-color-white);
+    padding: 30px;
+    width: 219px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: var(--desc-text);
+    }
+}
+
+
+
+
+
+
+
+/* =================== temoignages ==================== */
+
+#temoignages {
+  text-align: center;
+}
+
+#temoignages h2 {
+  margin-bottom: 50px;
+}
+
+.cardWrapperTémoignages {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}                          
+
+.cardTemoignage {
+  position: relative;
+  background-color: var(--bg-color-orange);
+  border-radius: 20px;
+  padding: 45px 30px;
+  width: 290px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
+}
+
+.vote {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.cardTemoignage p {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--desc-text);
+}
+.etoiles {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.vote img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+
+
+/* =================== Section Avantages ==================== */
+
+/* <div class="slider">
+  <img src="photo1.jpg" alt="">
+  <img src="photo2.jpg" alt="">
+  <img src="photo3.jpg" alt="">
+</div>
+ 
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+ 
+.slider img {
+  flex: 0 0 80%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  scroll-snap-align: center;
+}
+ 
+/* cacher la scrollbar (optionnel) */
+/* .slider::-webkit-scrollbar {
+  display: none;
+}
+ 
+.slider img {
+  transition: transform 0.4s ease;
+}
+ 
+.slider img:hover {
+  transform: scale(1.05);
+}
+ 
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+ 
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+ 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+body {
+  scroll-snap-type: y mandatory;
+}
+ 
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+ 
+html {
+  scroll-behavior: smooth;
+} */
+#avantages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+    } 
+  }
+
+.cardWrapperAvantages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cardAvantage {
+  background-color: var(--bg-color-white);
+  width: 290px;
+  padding: 45px 30px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.cardAvantage:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.cardAvantage-col { 
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cardAvantage-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+ 
+/* .left .offset-1 {
+  transform: translateY(-80px);
+}
+
+.left .offset-2 {
+  transform: translateY(60px);
+}
+
+
+.right .offset-3 {
+  transform: translateY(-40px);
+}
+
+.right .offset-4 {
+  transform: translateY(30px);
+}
+
+.right .offset-5 {
+  transform: translateY(-90px);
+} */
 
 
 
@@ -128,19 +470,25 @@ p{
 #telechargement {
 
   .container {
-    margin: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
 }
 
 #dwlContent {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
 }
 
 #dwlContent1 {
 
   h2 {
     font-size: 40px;
+  }
+
+  img {
+    width: 449px;
   }
 }
 
@@ -150,16 +498,100 @@ p{
   align-items: center;
   
   img {
-    width: 400px;
+    width: 500px;
+  }
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 45px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--desc-text)
   }
 }
 
 
-/* ======================= FOOTER ======================== */
+/* ================== FAQ =================== */
 
-#sectionFooter {
+#foire-au-question {
+  border-top: 1px solid var(--secondary-color);
+  padding: 50px 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  div {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+
+    i {
+      border-radius: 0 15px 15px 0;
+      padding: 12px 20px;
+      font-size: 16px;
+
+    }
+  }
+
+  div input {
+    font-size: 16px;
+    padding: 10px 8px;
+    width: 100%;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid var(--secondary-color);
+  }
+}
+
+.asked {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.question-asked {
+  background-color: var(--bg-color-orange);
+  padding: 50px 0;
+}
+
+.question-blocks {
+  margin-top: 30px;
+  border-right: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+}
+
+.answered, .asked {
+  padding: 15px 30px;
+}
+
+.asked {
+  background-color: var(--bg-color-white);
   border-top: 1px solid var(--secondary-color);
 }
+
+.answered {
+  background-color: var(--light-orange);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.094);
+}
+
+/* ======================= FOOTER ======================== */
+
+/* #sectionFooter {
+  border-top: 1px solid var(--secondary-color);
+} */
 
 #sectionFooter p {
   background-color: var(--light-orange);
@@ -191,7 +623,13 @@ p{
   .fa-brands {
     color: var(--secondary-color);
     font-size: 25px;
+    transition: ease-in-out 250ms;
   }
+
+  .fa-brands:hover {
+    color: var(--primary-color);
+    transition: ease-in-out 250ms;
+  }  
 
   #ftContent2 ul {
     list-style: none;
@@ -201,6 +639,12 @@ p{
     li a {
       color: var(--secondary-color);
       text-decoration: none;
+      transition: ease-in-out 250ms;
+    }
+
+    li a:hover {
+    transition: ease-in-out 250ms;
+    color: var(--primary-color);
     }
   }
 }
