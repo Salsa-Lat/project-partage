@@ -140,7 +140,7 @@ p{
 #hero {
   background-image: 
     /* radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%), */
-    url('asset/photo9-removebg-preview.png');
+    url('asset/photo9-sans-bg.png');
   background-position: center;
   background-size: 800px;
   background-repeat: no-repeat;
@@ -234,6 +234,7 @@ p{
 .personas{
   display: flex;
   justify-content: center;
+  padding-top: 25px;
 
   img{
     width: 500px;
