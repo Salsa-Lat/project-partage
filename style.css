@@ -43,6 +43,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 25px;
   font-family: var(--h2-font);
   color: var(--primary-color);
   font-size: 35px;
@@ -87,11 +88,62 @@ p{
   border: 2px solid var(--primary-color);
 }
 
-/* .btn:hover {
-  background-color: var(--bg-color-white);
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-} */
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--dark-brown);
+  box-shadow: 0 10px 30px rgba(230, 193, 122, 0.35);
+}
+
+.btn-border {
+  position: relative;
+  display: inline-block;
+  padding: 14px 44px;
+  border-radius: 999px;
+  background: transparent;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* Texte */
+.btn-border span {
+  position: relative;
+  z-index: 2;
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  color: #e6c17a;
+}
+
+/* Contour animé */
+.btn-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  /* épaisseur du contour */
+  background: conic-gradient(from 0deg,
+      transparent,
+      #e6c17a,
+      transparent,
+      #e6c17a,
+      transparent);
+  animation: rotate-gold 3s linear infinite;
+
+  /* masque pour garder uniquement le contour */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes rotate-gold {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 
@@ -129,18 +181,23 @@ p{
 /* =================== Section HERO ==================== */
 #hero {
   background-image: 
-    radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%),
-    url('asset/bnac-image.png');
+    /* radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%), */
+    url('asset/photo10.jpg');
   background-position: center;
   background-size: 800px;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 114vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* h1{
+    deplacer le titre "documentation" dans le cadre du téléphone
+  } */
 }
 
 #heroContent{
+  gap: 371px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -212,6 +269,10 @@ p{
     align-items: center;
     gap: 20px;
 
+    .container {
+      text-align: center;
+    }
+
     img{
         width: 80%;
         padding-top: 20px;
@@ -219,6 +280,7 @@ p{
 
     h2{
         text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -231,6 +293,10 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+h2{
+    text-align: center;
 }
 
 .cardWrapperSolutions {
@@ -406,6 +472,7 @@ html {
     h2{
       text-align: center;
       margin-bottom: 20px;
+      color: var(--primary-color);
     } 
   }
 
@@ -421,9 +488,17 @@ html {
   width: 290px;
   padding: 45px 30px;
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  h3{
+      color: var(--primary-color);
+    } 
+
+  p {
+      text-align: left;
+  }
 }
 .cardAvantage:hover {
   transform: translateY(-10px);
@@ -623,7 +698,7 @@ html {
 .chat1:hover {
   cursor: pointer;
   transform: translateY(-8px);
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.078), 2px 4px 8px rgba(0, 0, 0, 0.062);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
 /* ======================= FOOTER ======================== */

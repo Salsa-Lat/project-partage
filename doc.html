@@ -14,7 +14,7 @@
   <!-- nav -->
   <nav id="navBar">
     <a href="/index.html">Accueil</a>
-    <a href="index.html">Documentation</a>
+    <a href="index.html" class="selected">Documentation</a>
   </nav>
 
   <!-- section hero -->
@@ -29,7 +29,7 @@
 
   <!-- section contexte -->
   <section id="contexte" class="sectionPadding">
-    <div class=" container-small">
+    <div class=" container">
       <h2>Contexte</h2>
       <p>PARTAGE est né d’un constat simple : nous avons tous déjà eu besoin d’un objet pour une durée limitée. Qu’il
         s’agisse d’un équipement ponctuel, d’un objet utilisé occasionnellement ou d’un besoin temporaire, acheter du
@@ -47,9 +47,9 @@
 
   <!-- section pour-qui -->
   <section id="pour-qui" class="sectionPadding">
-    <div class="container-small">
+    <div class="container">
       <h2>Pour qui ?</h2>
-
+      
       <p> PARTAGE s’adresse à toutes les personnes qui ont besoin d’objets ponctuellement, sans vouloir les
         acheter.PARTAGE s’adresse à toutes les personnes qui ont besoin d’objets ponctuellement, sans vouloir les
         acheter.
@@ -62,7 +62,17 @@
         partagé et utile à plusieurs.
       </p>
 
-      <div class="cartes">
+      <div class="personas">
+        <div id="personaLoic">
+          <img src="asset/personaLoic.png" alt="persona Loic">
+        </div>
+
+        <div id="personaSarah">
+          <img src="asset/personaSarah.png" alt="persona Sarah">
+        </div>
+      </div>
+        
+      <!-- <div class="cartes">
         <div class="carte">
           <img class="sarah" src="asset/LoicLover69-pfp.png" alt="persona 1">
           <p> Nom : Loic <br>
@@ -108,7 +118,7 @@
               projets plus facilement. </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -118,14 +128,14 @@
       <h2> Nos services</h2>
       <div class="card-wrapper">
         <div class="card">
-          <img src="" alt="">
+          <img src="asset/photo2.jpg" alt="">
           <h3> Trouvez ce dont vous avez besoin, près de chez vous</h3>
           <p> Empruntez des objets pour un usage ponctuel sans payer. Plus besoin d’acheter des outils ou équipements
             que vous n’utiliserez qu’une fois. Simple, rapide et pratique.</p>
         </div>
 
         <div class="card">
-          <img src="" alt="">
+          <img src="asset/photo7.jpg" alt="">
           <h3> Donnez une seconde vie à vos objets</h3>
           <p> Mettez vos outils et objets à disposition des autres. Vous les faites servir plus longtemps tout en
             gagnant
@@ -133,20 +143,15 @@
         </div>
 
         <div class="card">
-          <img src="" alt="">
+          <img src="asset/photo3.jpg" alt="">
           <h3> Économisez, tout en réduisant le gaspillage</h3>
           <p> Profitez d’une consommation responsable et solidaire. Moins de dépenses, moins de gaspillage et une
             démarche
             gagnant-gagnant pour tous.
-
-
           </p>
-
         </div>
 
-
       </div>
-
     </div>
   </section>
 
@@ -155,19 +160,19 @@
     <div class="container">
       <h2>Maquette</h2>
       <div class="contenu-maq">
-        <p>Ajouter un article</p>
+        <p>Ajouter un article :</p>
         <img src="asset/maquette-ajout-article.png" alt="">
       </div>
 
 
 
       <div class="contenu-maq">
-        <p>Emprunter un objet</p>
+        <p>Emprunter un objet :</p>
         <img src="asset/maquette-emprunte.png" alt="">
       </div>
 
       <div class="contenu-maq">
-        <p>Générer un QR-Code</p>
+        <p>Générer un QR-Code :</p>
         <img src="asset/maquette-qrcode.png" alt="">
       </div>
 
@@ -178,24 +183,32 @@
 
 
     </div>
-    <a href="" class="btn">Télécharger</a>
-
-
-
+    <a href="" class="btn">Voir userflow</a>
+    <!-- ajouter image userflow -->
   </section>
+
   <!-- section prototype -->
   <section id="prototype" class="sectionPadding">
     <div class="container">
       <h2> Prototype interactif</h2>
-      <p>Lorem ipsum dolor, </p>
-      <div class="img-prototype">
-        <img src="" alt="">
+
+      <p>Testez la version prototype de Partage  </p>
+
+      <!-- <div class="img-prototype">
+        <a href="https://www.figma.com/design/p6WS7Q41tkIUXNhSua8Oex/PARTAGE?node-id=383-2292&t=WNPm0016hwvWf3zQ…" target="_blank"><img src="asset/image.jpg" alt="lienPrototype" ></a>
+      </div> -->
+
+      <div class="frame-center">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="650" height="550" src="https://embed.figma.com/proto/p6WS7Q41tkIUXNhSua8Oex/PARTAGE?page-id=383%3A2292&node-id=1005-13053&viewport=-24770%2C-21736%2C1.36&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1005%3A13053&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
       </div>
+      
+      
+      <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+        src="https://embed.figma.com/proto/p6WS7Q41tkIUXNhSua8Oex/test?node-id=1005-13053&p=f&scaling=min-zoom&content-scaling=fixed&page-id=383%3A2292&starting-point-node-id=1005%3A13053&show-proto-sidebar=1&embed-host=share"allowfullscreen></iframe> -->
 
     </div>
-
-
   </section>
+
   <!-- section partenaires -->
   <section id="partenaires" class="sectionPadding">
     <div class="container">
@@ -210,8 +223,6 @@
 
   <!-- section telechargement -->
   <section id="telechargement" class="sectionPadding">
-
-
     <div id="dwlContent" class="container">
       <div id="dwlContent1">
         <h2>"Vivez le partage malin au quotidien"</h2>

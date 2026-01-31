@@ -113,7 +113,7 @@ p{
 /* =================== NavBar ==================== */
 
 #navBar{
-  gap: 25px;
+  gap: 40px;
   padding: 20px 70px;
   display: flex;
   justify-content: right;
@@ -139,15 +139,21 @@ p{
 
 #hero {
   background-image: 
-    radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%),
-    url('asset/bnac-image.png');
+    /* radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%), */
+    url('asset/photo9.jpg');
   background-position: center;
   background-size: 800px;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1{
+    padding-right: 190px;
+    font-size: 44px;
+  }
+  
 }
 
 /* les cards  */
@@ -164,8 +170,8 @@ p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
 
     img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
     }
     .carte{
       img{
@@ -202,7 +208,7 @@ p{
 }
 
 #contexte p{
-  max-width: 900px;
+  /* max-width: 900px; */
   line-height: 1.6;
 }
 
@@ -212,9 +218,29 @@ p{
 
 /* =================== Pour-Qui ==================== */
 #pour-qui{
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
   p{
-    max-width: 810px;
+    /* max-width: 900px; */
+  line-height: 1.6;
+  } 
+}
+
+.personas{
+  display: flex;
+  justify-content: center;
+
+  img{
+    width: 500px;
+    height: auto;
+    margin: 0 20px;
   }
+  
 }
 
 
@@ -225,6 +251,7 @@ p{
     text-align: center;
   }
 }
+
 
 
 /* =================== Section Partenaires ==================== */
@@ -245,7 +272,10 @@ p{
     gap: 15px;
     
 }
-/* srction service  */
+
+
+
+/* =================== Section Service ==================== */
 #services{
   text-align: center;
 }
@@ -257,7 +287,6 @@ p{
     gap: 32px;
     
 }
-
 
 .services {
   display: flex;
@@ -286,7 +315,10 @@ p{
   transform: scale(0.96);
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
-/* section telechargement */
+
+
+
+/* =================== Section Téléchargement ==================== */
 #telechargement{
   h2{
     text-align: center;
@@ -301,7 +333,9 @@ p{
     border-radius: 50%;
 }
 
-/* Section Maquette */
+
+
+/* =================== Section Maquette ==================== */
 #maquette{
   display: flex;
   flex-direction: column;
@@ -311,14 +345,43 @@ p{
 }
 .contenu-maq{
   display: flex;
-    align-items: center;
+    /* align-items: center; */
     height: 260px;
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-color);
 
   p{
     width: 249px;
+    font-size: larger;
+    font-weight: 600;
+  
   }
   img{
     height: 100%;
   }
 }
+
+
+/* =================== Section Prototype ==================== */
+#prototype{
+  p{
+    text-align: center;
+    margin-top: 25px;
+  }
+
+}
+p{
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+.frame-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+
+
