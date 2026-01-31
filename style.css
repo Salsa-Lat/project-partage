@@ -307,9 +307,6 @@ h2{
     gap: 20px;
 }
 
-/* Je modifierai la card après, flemme  */
-/* FAIT */ 
-/* merci */
 .card { 
     display: flex;
     align-items: center;
@@ -497,7 +494,7 @@ html {
     } 
 
   p {
-      text-align: left;
+      text-align: center;
   }
 
   li{
