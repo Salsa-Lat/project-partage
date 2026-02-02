@@ -51,6 +51,7 @@ h2 {
 
 p{
   font-family: var(--p-font);
+  line-height: 1.6;
 }
 
 
@@ -156,13 +157,83 @@ p{
 
 /* =================== HEADER ==================== */
 
-/* CSS NAVBAR à revoir */
-/* FAIT */
-#navBar{
-  padding: 25px 70px;
+
+#navBar {
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 18px 40px;
   display: flex;
-  justify-content: right;
-  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+ 
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+ 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  animation: slideDown 0.8s ease-out;
+  z-index: 1000;
+
+  p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--h1-font);
+  color: var(--primary-color);
+  }
+}
+
+#navBar ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+  }
+  
+
+#navBar a{
+  display: flex;
+  gap: 32px;
+}
+ 
+#navBar a {
+  position: relative;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+ 
+#navBar a a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  transition: width 0.35s ease;
+}
+ 
+#navBar a a:hover::after,
+#navBar a a.active::after {
+  width: 100%;
+}
+ 
+#navBar abbr a:hover {
+  color: #111;
+}
+
+/* 
+#navBar{
+  padding: 0px 70px;
+  display: flex;
+  /* justify-content: right; */
+  /* justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-orange);
 
   ul {
     display: flex;
@@ -171,13 +242,20 @@ p{
 
   a{
     font-family: var(--p-font);
-    color: var(--bg-color-white);
+    color: var(--secondary-color);
   }
 
   li{
     list-style: none;
   }
-}
+
+  p{
+    font-family: var(--h1-font);
+    font-weight: 900;
+    font-size: 35px;
+    color: var(--primary-color);
+  }
+} */ 
 
 .selected {
   font-weight: 600;
@@ -337,8 +415,8 @@ h2{
     flex-wrap: wrap;
     gap: 30px;
     background-color: var(--bg-color-white);
-    padding: 30px;
-    width: 219px;
+    padding: 30px 25px;
+    width: 230px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
 
@@ -418,71 +496,6 @@ h2{
 
 /* =================== Section Avantages ==================== */
 
-/* <div class="slider">
-  <img src="photo1.jpg" alt="">
-  <img src="photo2.jpg" alt="">
-  <img src="photo3.jpg" alt="">
-</div>
- 
-.slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  padding: 20px;
-}
- 
-.slider img {
-  flex: 0 0 80%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 20px;
-  scroll-snap-align: center;
-}
- 
-/* cacher la scrollbar (optionnel) */
-/* .slider::-webkit-scrollbar {
-  display: none;
-}
- 
-.slider img {
-  transition: transform 0.4s ease;
-}
- 
-.slider img:hover {
-  transform: scale(1.05);
-}
- 
-section {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease-out forwards;
-}
- 
-section:nth-child(1) { animation-delay: 0.1s; }
-section:nth-child(2) { animation-delay: 0.2s; }
-section:nth-child(3) { animation-delay: 0.3s; }
- 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
- 
-body {
-  scroll-snap-type: y mandatory;
-}
- 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
- 
-html {
-  scroll-behavior: smooth;
-} */
 #avantages{
     display: flex;
     flex-direction: column;
@@ -525,6 +538,7 @@ html {
     text-align: left;
   }
 }
+
 .cardAvantage:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
@@ -542,33 +556,6 @@ html {
   text-align: center;
 
 }
-
-
- 
-/* .left .offset-1 {
-  transform: translateY(-80px);
-}
-
-.left .offset-2 {
-  transform: translateY(60px);
-}
-
-
-.right .offset-3 {
-  transform: translateY(-40px);
-}
-
-.right .offset-4 {
-  transform: translateY(30px);
-}
-
-.right .offset-5 {
-  transform: translateY(-90px);
-} */
-
-
-
-
 
 
 
@@ -789,8 +776,6 @@ html {
 } */
 
 #sectionFooter p {
-  background-color: var(--light-orange);
-  padding: 15px 32px;
   font-size: 14px;
 }
 
@@ -842,6 +827,11 @@ html {
     color: var(--primary-color);
     }
   }
+}
+.f{
+  background-color: var(--light-orange);
+  padding: 15px 32px;
+  line-height: 5px;
 }
 
 
