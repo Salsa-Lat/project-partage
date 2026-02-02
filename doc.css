@@ -51,9 +51,16 @@ h2 {
 
 p{
   font-family: var(--p-font);
+  line-height: 1.6;
 }
 
+.hidden {
+  display: none;          
+}
 
+.visible {
+  display: block; 
+}
 
 
 
@@ -65,7 +72,7 @@ p{
 
 .container{
   margin: auto;
-  max-width: 1200px;
+  max-width: 1060px;
 } 
 
 .container-small{
@@ -113,22 +120,28 @@ p{
 /* =================== NavBar ==================== */
 
 #navBar{
-  gap: 40px;
-  padding: 20px 70px;
+  padding: 25px 70px;
   display: flex;
   justify-content: right;
   background-color: var(--primary-color);
 
-  a{
+  ul {
     display: flex;
     gap: 45px;
   }
 
-  /* a{
+  a{
     font-family: var(--p-font);
     color: var(--bg-color-white);
-  } */
- 
+  }
+
+  li{
+    list-style: none;
+  }
+}
+
+.selected {
+  font-weight: 600;
 }
 
 
@@ -167,7 +180,7 @@ p{
     padding: 30px;
     width: 219px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.053);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.34);
 
     img {
       width: 100px;
@@ -210,6 +223,7 @@ p{
 #contexte p{
   /* max-width: 900px; */
   line-height: 1.6;
+  max-width: 1800px;
 }
 
 
@@ -228,6 +242,7 @@ p{
   p{
     /* max-width: 900px; */
   line-height: 1.6;
+  max-width: 1800px;
   } 
 }
 
@@ -270,8 +285,12 @@ p{
 .partenairesLogos{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     
+
+    img {
+      width: 225px;
+    }
 }
 
 
@@ -322,7 +341,7 @@ p{
 /* =================== Section Téléchargement ==================== */
 #telechargement{
   h2{
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
   }
 }
@@ -383,6 +402,25 @@ p{
   align-items: center;
   margin-top: 35px;
 }
+
+/* section Et la suite */
+#Et-la-suite{
+  text-align: center;
+  padding: 80px 20px;
+}
+#Et-la-suite h2{
+   margin-bottom: 20px;
+
+}
+#Et-la-suite p {
+  line-height: 1.6;
+  max-width: 1800px;
+
+  
+
+
+}
+
 
 
 

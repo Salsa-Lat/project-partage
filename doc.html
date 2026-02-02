@@ -13,8 +13,10 @@
 <body>
   <!-- nav -->
   <nav id="navBar">
-    <a href="/index.html">Accueil</a>
-    <a href="index.html" class="selected">Documentation</a>
+      <ul>
+        <li><a href="/index.html" >Accueil</a></li>
+        <li><a href="/doc.html" class="selected">Documentation</a></li>
+      </ul>
   </nav>
 
   <!-- section hero -->
@@ -183,8 +185,10 @@
 
 
     </div>
-    <a href="" class="btn">Voir userflow</a>
+    <button class="btn" id="btn-userflow">Voir userflow</button>
     <!-- ajouter image userflow -->
+    <img id="img-userflow" src="asset/userflow.png" alt="Userflow" class="hidden">
+     
   </section>
 
   <!-- section prototype -->
@@ -209,15 +213,30 @@
     </div>
   </section>
 
+
+  <!-- section Et la suite  -->
+
+  <section id="Et-la-suite">
+    <div class="container">
+      <h2>Et ensuite ? Les évolutions possibles</h2>
+      <p>PARTAGE est un projet pensé pour évoluer dans le temps et s’adapter aux besoins réels de ses utilisateurs. L’objectif est d’aller au-delà du simple partage d’objets et de construire un écosystème collaboratif durable.
+À terme, l’application pourra intégrer le partage de services entre particuliers : aide au bricolage, petits travaux, montage de meubles ou accompagnement ponctuel. Une manière de valoriser les compétences de chacun, en complément du partage d’objets.</p>
+
+    </div>
+
+  </section>
+
   <!-- section partenaires -->
-  <section id="partenaires" class="sectionPadding">
+  <section id="partenaires" class="sectionPadding sectionBackground">
     <div class="container">
       <h2>Nos partenaires</h2>
-      <div class="partenairesLogos"></div>
-      <img src="asset/logo-too-good-to-go.png" alt="">
-      <img src="asset/logo-Vinted.png" alt="">
-      <img src="asset/logo-geev.png" alt="">
-      <img src="asset/logo-back-market.png" alt="">
+      <div class="partenairesLogos">
+        <img src="asset/logo-too-good-to-go.png" alt="">
+        <img src="asset/logo-Vinted.png" alt="">
+        <img src="asset/logo-geev.png" alt="">
+        <img src="asset/logo-back-market.png" alt="">
+    </div>
+      
     </div>
   </section>
 
@@ -226,19 +245,22 @@
     <div id="dwlContent" class="container">
       <div id="dwlContent1">
         <h2>"Vivez le partage malin au quotidien"</h2>
-        <img src="asset/arrow.png" alt="arrow">
+        <p>Besoin d’un objet ponctuellement ?
+Trouvez-le près de chez vous, empruntez-le en toute simplicité et évitez les achats inutiles. Le partage devient un réflexe du quotidien.</p>
       </div>
 
       <div id="dwlContent2">
-        <img src="asset/pic1.png" alt="photo">
+        <img src="asset/phones.png" alt="photo">
         <div class="downloadButtons">
           <div>
-            <a href="" class="btn">Télécharger</a>
-            <p>Sur Android</p>
+            <button id="btn_GooglePlay"></button>
+            <!-- <a href="" class="btn">Télécharger</a>
+            <p>Sur Android</p>  -->
           </div>
           <div>
-            <a href="" class="btn secondary">Télécharger</a>
-            <p>Sur iOS</p>
+            <!-- <a href="" class="btn secondary">Télécharger</a>
+            <p>Sur iOS</p> -->
+            <button id="btn_AppleStore"></button>
           </div>
         </div>
       </div>
@@ -279,6 +301,8 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/c7036cb919.js" crossorigin="anonymous"></script>
+
+  <script src="scriptDoc.js"></script>
 
 </body>
 
