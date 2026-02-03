@@ -65,7 +65,6 @@ p{
 
 
 /* =================== Classes ==================== */
-
 .selected {
   font-weight: 600;
 }
@@ -90,14 +89,12 @@ p{
 
 .sectionPadding{
     padding-block: 64px;
-    
 }
 
 .sectionBackground{
   background-color:var(--bg-color-orange);
 }
 
-/* btn */
 .btn{
   background-color: var(--primary-color);
   padding: 15px 25px;
@@ -115,45 +112,31 @@ p{
 
 
 
-
-
 /* =================== NavBar ==================== */
-
- 
-#navBar {
-  position: relative;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  padding: 18px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- 
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-  border-radius: 18px;
- 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  animation: slideDown 0.8s ease-out;
-  z-index: 1000;
-
   p {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: var(--h1-font);
   color: var(--primary-color);
   }
+
+  img {
+    width: 500px;
+  }
+
+.logo-ya {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
   
 #navBar ul {
     display: flex;
     gap: 45px;
   list-style: none;
-  }
+}
 
-#navBar a{
+#navBar a {
   display: flex;
   gap: 32px;
 }
@@ -186,28 +169,6 @@ p{
 #navBar abbr a:hover {
   color: #111;
 }
- 
-
-/* #navBar{
-  padding: 25px 70px;
-  display: flex;
-  justify-content: right;
-  background-color: var(--primary-color);
-
-  ul {
-    display: flex;
-    gap: 45px;
-  }
-
-  a{
-    font-family: var(--p-font);
-    color: var(--bg-color-white);
-  }
-
-  li{
-    list-style: none;
-  }
-} */
 
 .selected {
   font-weight: 600;
@@ -215,27 +176,24 @@ p{
 
 
 
-
-
 /* =================== Section Hero ==================== */
-
 #hero {
   background-image: 
     /* radial-gradient(circle, #fffcfb5a 5%, #fffcfb 60%, #fffcfb 100%), */
     url('asset/photo9-sans-bg.png');
   background-position: center;
-  background-size: 800px;
+      background-size: contain;
   background-repeat: no-repeat;
-  height: 130vh;
+  min-height: 80vh;
+    margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1{
-    padding-right: 190px;
-    font-size: 44px;
+    padding-right: 18vh;
+        font-size: 4vh;
   }
-  
 }
 
 /* les cards  */
@@ -255,6 +213,7 @@ p{
       width: 100px;
       height: 100px;
     }
+
     .carte{
       img{
         width: 80px;
@@ -276,10 +235,7 @@ p{
 
 
 
-
-
 /* =================== Section Contexte ==================== */
-
 #contexte{
   text-align: center;
   padding: 80px 20px;
@@ -294,8 +250,6 @@ p{
   line-height: 1.6;
   max-width: 1800px;
 }
-
-
 
 
 
@@ -319,17 +273,22 @@ p{
   display: flex;
   justify-content: center;
   padding-top: 25px;
+  gap: 2%;
+  flex-wrap: wrap;
+
+  div{
+    width: 46%;
+    min-width: 320px;
+  }
 
   img{
-    width: 500px;
+    width: 100%;
     height: auto;
-    margin: 0 20px;
   }
-  
 }
 
 
-/* section prototype */
+/* =================== Prototype ==================== */
 #prototype{
   h2{
     align-items: center;
@@ -368,13 +327,13 @@ p{
 #services{
   text-align: center;
 }
+
 .card-wrapper{
   padding-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-    
 }
 
 .services {
@@ -415,12 +374,11 @@ p{
   }
 }
 
-
 .sarah{
   width: 205px;
-    height: 205px;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 205px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 
@@ -433,6 +391,7 @@ p{
   align-items: center;
   gap: 80px;
 }
+
 .contenu-maq{
   display: flex;
     /* align-items: center; */
@@ -445,23 +404,32 @@ p{
     width: 249px;
     font-size: larger;
     font-weight: 600;
-  
   }
+  
   img{
     height: 300px;
   }
 }
 
+#img-userflow:active
+{
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+}
+
+
 
 /* =================== Section Prototype ==================== */
-#prototype{
+#prototype {
   p{
     text-align: center;
     margin-top: 25px;
   }
-
 }
-p{
+
+p {
   font-family: sans-serif;
   font-size: medium;
 }
@@ -474,24 +442,27 @@ p{
 }
 
 /* section Et la suite */
-#Et-la-suite{
+#Et-la-suite {
   text-align: center;
   padding: 80px 20px;
 }
-#Et-la-suite h2{
-   margin-bottom: 20px;
 
+#Et-la-suite h2 {
+  margin-bottom: 20px;
 }
+
 #Et-la-suite p {
   line-height: 1.6;
   max-width: 1800px;
 }
 
 canvas {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
+/* #personaLoic,#personaSarah{
 
+} */
 
 
