@@ -3,7 +3,8 @@
 /* =================== GENERAL ==================== */
 :root {
   --bg-color-white: #FFFCFB;
-  --bg-color-orange: #FFF5EE;
+  /* --bg-color-orange: #FFF5EE; */
+  --bg-color-orange: #FFE0CA;
   --primary-color: #FF944C;
   --secondary-color: #2C180B;
   --light-brown: #5E3519;
