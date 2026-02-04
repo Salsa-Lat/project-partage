@@ -28,7 +28,7 @@ body {
   color: var(--secondary-color);
   font-family: var(--p-font);
   background-color: var(--bg-color-white);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 a {
@@ -404,7 +404,7 @@ h2 {
 }
 
 .card:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
@@ -516,7 +516,7 @@ h2 {
 }
 
 .cardAvantage:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
