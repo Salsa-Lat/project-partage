@@ -350,7 +350,6 @@ p{
   width: 300px;
   border-radius: 16px;
   text-align: center;
-  cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
  
